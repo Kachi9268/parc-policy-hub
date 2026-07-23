@@ -3,6 +3,7 @@ import { PageHeader } from "../components/page-header";
 import { SectionHeading } from "../components/section-heading";
 import { CORE_VALUES } from "../data/parc";
 import { User } from "lucide-react";
+import coouLogo from "../assets/coou-logo.jpg.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -37,7 +38,22 @@ function AboutPage() {
             </div>
           </div>
           <aside className="rounded-2xl border border-border bg-[color:var(--surface)] p-8">
-            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">At a Glance</div>
+            <div className="flex items-center gap-4">
+              <img
+                src={coouLogo.url}
+                alt="Chukwuemeka Odumegwu Ojukwu University crest"
+                width={64}
+                height={64}
+                className="h-16 w-16 shrink-0 object-contain"
+                loading="lazy"
+                decoding="async"
+              />
+              <div>
+                <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">Affiliated Institution</div>
+                <div className="mt-1 font-serif text-lg leading-tight text-foreground">Chukwuemeka Odumegwu Ojukwu University</div>
+              </div>
+            </div>
+            <div className="mt-6 text-xs font-semibold uppercase tracking-[0.18em] text-primary">At a Glance</div>
             <dl className="mt-6 space-y-5">
               {[
                 ["Institution", "Chukwuemeka Odumegwu Ojukwu University"],
