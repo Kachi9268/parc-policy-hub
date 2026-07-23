@@ -1,35 +1,38 @@
+import parcLogo from "../assets/parc-logo.jpg.asset.json";
+
 type Props = {
   className?: string;
   tone?: "dark" | "light";
+  alt?: string;
 };
 
 /**
- * Placeholder monogram for the PARC logo.
- * Swap for the official mark when supplied.
+ * Official PARC logo mark. Rendered on a white chip so the logo's
+ * colours stay accurate on both light and dark backgrounds.
  */
-export function ParcMark({ className, tone = "dark" }: Props) {
-  const bg = tone === "dark" ? "var(--primary)" : "#ffffff";
-  const fg = tone === "dark" ? "#ffffff" : "var(--primary)";
-  const ring = tone === "dark" ? "var(--gold)" : "var(--gold)";
+export function ParcMark({ className, tone = "dark", alt = "PARC — Policy Analysis and Research Congress" }: Props) {
+  const ringColor = tone === "light" ? "rgba(255,255,255,0.2)" : "rgba(0,0,0,0.06)";
   return (
     <span
       className={className}
-      aria-hidden="true"
       style={{
         display: "inline-flex",
         alignItems: "center",
         justifyContent: "center",
-        borderRadius: 8,
-        background: bg,
-        color: fg,
-        boxShadow: `inset 0 0 0 1px ${ring}`,
-        fontFamily: "var(--font-serif)",
-        fontWeight: 700,
-        fontSize: "0.95em",
-        letterSpacing: "-0.04em",
+        borderRadius: 9999,
+        background: "#ffffff",
+        boxShadow: `inset 0 0 0 1px ${ringColor}`,
+        overflow: "hidden",
+        flexShrink: 0,
       }}
     >
-      P
+      <img
+        src={parcLogo.url}
+        alt={alt}
+        style={{ width: "100%", height: "100%", objectFit: "contain", padding: "6%" }}
+        loading="eager"
+        decoding="async"
+      />
     </span>
   );
 }
