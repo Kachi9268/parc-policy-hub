@@ -3,6 +3,7 @@ import { ArrowRight, Quote, Sparkles, Trophy, FileText, ImageIcon, Calendar } fr
 import heroImg from "../assets/hero-library.jpg";
 import sessionImg from "../assets/session.jpg";
 import researchImg from "../assets/research.jpg";
+import execPhoto from "../assets/parc-executives.jpg.asset.json";
 import { SectionHeading } from "../components/section-heading";
 import { ParcMark } from "../components/parc-mark";
 import { ACTIVITIES, ACHIEVEMENTS, BLOG_POSTS, EXECUTIVE_LEADERSHIP } from "../data/parc";
@@ -121,17 +122,20 @@ function Hero() {
           </dl>
         </div>
         <div className="relative">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border shadow-[0_40px_80px_-40px_rgba(22,101,52,0.35)]">
+          <div className="relative aspect-[4/5] sm:aspect-[4/3] overflow-hidden rounded-3xl border border-border shadow-[0_40px_80px_-40px_rgba(22,101,52,0.35)]">
             <img
-              src={heroImg}
-              alt="A quiet, sunlit library — an image of the reflective research culture PARC cultivates."
-              className="h-full w-full object-cover"
-              width={1024}
-              height={1024}
+              src={execPhoto.url}
+              alt="The PARC Executive Council with faculty at the Department of Economics, COOU Igbariam."
+              className="h-full w-full object-cover object-[center_30%]"
+              width={1920}
+              height={1440}
+              loading="eager"
+              decoding="async"
             />
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-6">
-              <div className="text-xs uppercase tracking-[0.18em] text-white/70">Since 2023</div>
-              <div className="font-serif text-2xl text-white">Ideas that endure.</div>
+            <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-black/10" />
+            <div className="absolute inset-x-0 bottom-0 p-6">
+              <div className="text-xs uppercase tracking-[0.18em] text-white/80">The PARC Executive Council</div>
+              <div className="font-serif text-2xl text-white">Student leaders. Serious ideas.</div>
             </div>
           </div>
           <div className="absolute -bottom-6 -left-6 hidden max-w-[220px] rounded-2xl border border-border bg-card p-4 shadow-lg sm:block">
@@ -264,7 +268,11 @@ function WhatWeDo() {
 }
 
 function LeadershipPreview() {
-  const founder = { name: "Founder", position: "Founder", bio: "Founder profile forthcoming. This placeholder holds the space for the founder's biography and portrait." };
+  const founder = {
+    name: "Dr. Chukwunonso Ekesiobi",
+    position: "Founder & Convener",
+    bio: "Economist, policy analyst and lecturer in the Department of Economics at COOU, Igbariam. Founder and convener of PARC, providing vision and mentorship to the student Executive Council.",
+  };
   const featured = [founder, ...EXECUTIVE_LEADERSHIP];
   return (
     <section className="border-t border-border bg-[color:var(--surface)]">

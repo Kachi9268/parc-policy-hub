@@ -35,28 +35,28 @@ function Group({ title, description, leaders }: { title: string; description?: s
 
 function LeadershipPage() {
   const founder = {
-    name: "Founder",
-    position: "Founder",
-    bio: "Placeholder for the founder's biography. Full profile, portrait and message forthcoming.",
+    name: "Dr. Chukwunonso Ekesiobi",
+    position: "Founder & Convener",
+    bio: "Economist, policy analyst and lecturer in the Department of Economics at COOU, Igbariam. Founder and convener of PARC, providing vision and mentorship to the student Executive Council. Full biography and portrait forthcoming.",
   };
   return (
     <>
       <PageHeader
         eyebrow="Leadership"
-        title="The people behind the congress."
-        description="PARC is stewarded by a dedicated team of student leaders across executive, administrative, research, communications and technical directorates."
+        title="Founder and student executives."
+        description="PARC is founded and convened by Dr. Chukwunonso Ekesiobi, and led day-to-day by an elected student Executive Council working under his mentorship."
       />
       <section className="container-parc py-16 md:py-20">
         <div className="max-w-2xl">
-          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Founder</div>
-          <p className="mt-3 text-muted-foreground">The founder's profile is featured below.</p>
+          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Founder & Convener</div>
+          <p className="mt-3 text-muted-foreground">The founder provides the vision and mentorship that guides PARC's student leadership.</p>
         </div>
         <div className="mt-10">
           <LeaderCard leader={founder} featured />
         </div>
       </section>
       <div className="border-t border-border" />
-      <Group title="Executive Leadership" description="The president and vice president lead PARC's overall direction and strategy." leaders={EXECUTIVE_LEADERSHIP} />
+      <Group title="Student Executive Council" description="The elected student leaders — president and vice president — who lead PARC's day-to-day direction and strategy under the Founder's mentorship." leaders={EXECUTIVE_LEADERSHIP} />
       <div className="border-t border-border" />
       <Group title="Administration" leaders={ADMINISTRATION} />
       <div className="border-t border-border" />
