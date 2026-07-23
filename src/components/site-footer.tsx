@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone, Twitter, Instagram, Linkedin, Facebook } from "lucide-react";
 import { ParcMark } from "./parc-mark";
+import coouLogo from "../assets/coou-logo.jpg.asset.json";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -92,7 +93,18 @@ export function SiteFooter() {
       <div className="border-t border-white/10">
         <div className="container-parc flex flex-col items-start justify-between gap-2 py-6 text-xs text-white/55 sm:flex-row sm:items-center">
           <p>© {year} Policy Analysis and Research Congress, COOU. All rights reserved.</p>
-          <p>Igbariam, Anambra State · Nigeria</p>
+          <div className="flex items-center gap-3">
+            <img
+              src={coouLogo.url}
+              alt="COOU crest"
+              width={32}
+              height={32}
+              className="h-8 w-8 rounded-sm bg-white/95 object-contain p-0.5"
+              loading="lazy"
+              decoding="async"
+            />
+            <p>Affiliated with Chukwuemeka Odumegwu Ojukwu University · Igbariam, Nigeria</p>
+          </div>
         </div>
       </div>
     </footer>
