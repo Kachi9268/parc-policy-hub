@@ -77,9 +77,11 @@ function Hero() {
     <section className="relative overflow-hidden border-b border-border bg-[color:var(--surface)]">
       <div className="container-parc grid gap-12 py-16 md:py-24 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:gap-16">
         <div>
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-            <ParcMark className="h-4 w-4" />
-            COOU · Igbariam Campus
+          <div className="mb-6 flex items-center gap-3">
+            <ParcMark className="h-14 w-14" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+              COOU · Igbariam Campus
+            </div>
           </div>
           <h1 className="font-serif text-4xl leading-[1.02] text-foreground sm:text-5xl md:text-6xl lg:text-[4.25rem]">
             A student-led{" "}
