@@ -7,6 +7,7 @@ import { SectionHeading } from "../components/section-heading";
 import { ParcMark } from "../components/parc-mark";
 import { ACTIVITIES, ACHIEVEMENTS, BLOG_POSTS, EXECUTIVE_LEADERSHIP } from "../data/parc";
 import { LeaderCard } from "../components/leader-card";
+import coouLogo from "../assets/coou-logo.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -56,6 +57,7 @@ function HomePage() {
   return (
     <>
       <Hero />
+      <Affiliation />
       <AboutPreview />
       <VisionMission />
       <WhatWeDo />
@@ -136,6 +138,33 @@ function Hero() {
               To build a generation of researchers, thinkers and public leaders.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Affiliation() {
+  return (
+    <section aria-labelledby="affiliation-heading" className="border-b border-border bg-white">
+      <div className="container-parc flex flex-col items-center gap-6 py-10 text-center sm:flex-row sm:justify-center sm:gap-8 sm:text-left md:py-12">
+        <img
+          src={coouLogo.url}
+          alt="Chukwuemeka Odumegwu Ojukwu University (COOU) official crest"
+          width={96}
+          height={96}
+          className="h-20 w-20 shrink-0 object-contain sm:h-24 sm:w-24"
+          loading="lazy"
+          decoding="async"
+        />
+        <div className="max-w-xl">
+          <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">Institutional Affiliation</div>
+          <h2 id="affiliation-heading" className="mt-1 font-serif text-xl leading-snug text-foreground sm:text-2xl">
+            Affiliated with Chukwuemeka Odumegwu Ojukwu University
+          </h2>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            PARC operates within the academic community of COOU, Igbariam Campus — under the university's motto, <em>Education for Development</em>.
+          </p>
         </div>
       </div>
     </section>
