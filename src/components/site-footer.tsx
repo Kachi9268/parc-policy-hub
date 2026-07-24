@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone, Twitter, Instagram, Linkedin, Facebook } from "lucide-react";
 import { ParcMark } from "./parc-mark";
-import coouLogo from "../assets/coou-logo.jpg.asset.json";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -95,7 +94,7 @@ export function SiteFooter() {
           <p>© {year} Policy Analysis and Research Congress, COOU. All rights reserved.</p>
           <div className="flex items-center gap-3">
             <img
-              src={coouLogo.url}
+              src="/images/coou-logo.jpg"
               alt="COOU crest"
               width={32}
               height={32}

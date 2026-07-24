@@ -3,12 +3,11 @@ import { ArrowRight, Quote, Sparkles, Trophy, FileText, ImageIcon, Calendar } fr
 import heroImg from "../assets/hero-library.jpg";
 import sessionImg from "../assets/session.jpg";
 import researchImg from "../assets/research.jpg";
-import execPhoto from "../assets/parc-executives.jpg.asset.json";
 import { SectionHeading } from "../components/section-heading";
 import { ParcMark } from "../components/parc-mark";
 import { ACTIVITIES, ACHIEVEMENTS, BLOG_POSTS, EXECUTIVE_LEADERSHIP } from "../data/parc";
 import { LeaderCard } from "../components/leader-card";
-import coouLogo from "../assets/coou-logo.jpg.asset.json";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -124,7 +123,7 @@ function Hero() {
         <div className="relative">
           <div className="relative aspect-[4/5] sm:aspect-[4/3] overflow-hidden rounded-3xl border border-border shadow-[0_40px_80px_-40px_rgba(22,101,52,0.35)]">
             <img
-              src={execPhoto.url}
+              src="/images/parc-executives.jpg"
               alt="The PARC Executive Council with faculty at the Department of Economics, COOU Igbariam."
               className="h-full w-full object-cover object-[center_30%]"
               width={1920}
@@ -155,7 +154,7 @@ function Affiliation() {
     <section aria-labelledby="affiliation-heading" className="border-b border-border bg-white">
       <div className="container-parc flex flex-col items-center gap-6 py-10 text-center sm:flex-row sm:justify-center sm:gap-8 sm:text-left md:py-12">
         <img
-          src={coouLogo.url}
+          src="/images/coou-logo.jpg"
           alt="Chukwuemeka Odumegwu Ojukwu University (COOU) official crest"
           width={96}
           height={96}
