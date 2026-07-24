@@ -95,7 +95,7 @@ export function SiteFooter() {
           <p>© {year} Policy Analysis and Research Congress, COOU. All rights reserved.</p>
           <div className="flex items-center gap-3">
             <img
-              src={coouLogo.url}
+              src="/images/coou-logo.jpg"
               alt="COOU crest"
               width={32}
               height={32}
