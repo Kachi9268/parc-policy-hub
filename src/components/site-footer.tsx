@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone, Twitter, Instagram, Linkedin, Facebook } from "lucide-react";
 import { ParcMark } from "./parc-mark";
-import coouLogo from "../assets/coou-logo.jpg.asset.json";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();

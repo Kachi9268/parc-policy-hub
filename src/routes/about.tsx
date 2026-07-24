@@ -3,7 +3,6 @@ import { PageHeader } from "../components/page-header";
 import { SectionHeading } from "../components/section-heading";
 import { CORE_VALUES } from "../data/parc";
 import { User } from "lucide-react";
-import coouLogo from "../assets/coou-logo.jpg.asset.json";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
