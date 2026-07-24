@@ -3,12 +3,11 @@ import { ArrowRight, Quote, Sparkles, Trophy, FileText, ImageIcon, Calendar } fr
 import heroImg from "../assets/hero-library.jpg";
 import sessionImg from "../assets/session.jpg";
 import researchImg from "../assets/research.jpg";
-import execPhoto from "../assets/parc-executives.jpg.asset.json";
 import { SectionHeading } from "../components/section-heading";
 import { ParcMark } from "../components/parc-mark";
 import { ACTIVITIES, ACHIEVEMENTS, BLOG_POSTS, EXECUTIVE_LEADERSHIP } from "../data/parc";
 import { LeaderCard } from "../components/leader-card";
-import coouLogo from "../assets/coou-logo.jpg.asset.json";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
