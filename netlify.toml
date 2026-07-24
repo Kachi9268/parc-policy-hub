@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "dist/client"
+
+# TanStack Start is built via Nitro's `netlify` preset (configured in
+# vite.config.ts). Nitro emits the SSR handler to `.netlify/functions-internal`
+# and static client assets to `dist/client`. The generated `_redirects` routes
+# all non-static requests to the SSR function automatically.
