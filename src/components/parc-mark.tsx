@@ -1,5 +1,3 @@
-import parcLogo from "../assets/parc-logo.jpg.asset.json";
-
 type Props = {
   className?: string;
   tone?: "dark" | "light";
@@ -27,7 +25,7 @@ export function ParcMark({ className, tone = "dark", alt = "PARC — Policy Anal
       }}
     >
       <img
-        src={parcLogo.url}
+        src="/images/parc-logo.jpg"
         alt={alt}
         style={{ width: "100%", height: "100%", objectFit: "contain", padding: "6%" }}
         loading="eager"
