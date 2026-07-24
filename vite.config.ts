@@ -12,4 +12,8 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Override nitro's default (cloudflare) so `vite build` emits a Netlify-compatible bundle.
+  nitro: {
+    preset: "netlify",
+  },
 });
