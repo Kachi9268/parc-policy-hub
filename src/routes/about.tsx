@@ -57,7 +57,7 @@ function AboutPage() {
               {[
                 ["Institution", "Chukwuemeka Odumegwu Ojukwu University"],
                 ["Campus", "Igbariam, Anambra State"],
-                ["Established", "2023"],
+                ["Established", "2000"],
                 ["Focus", "Policy · Research · Leadership"],
               ].map(([k, v]) => (
                 <div key={k} className="flex flex-col border-b border-border pb-4 last:border-0 last:pb-0">
