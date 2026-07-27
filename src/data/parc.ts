@@ -89,6 +89,7 @@ export type Leader = {
   name: string;
   position: string;
   bio: string;
+  image?: string;
 };
 
 export const EXECUTIVE_LEADERSHIP: Leader[] = [
@@ -96,34 +97,36 @@ export const EXECUTIVE_LEADERSHIP: Leader[] = [
     name: "Chimezie Prince",
     position: "President",
     bio: "Leads PARC's overall direction, representing the congress at the university and in wider policy conversations.",
+    image: "/images/executives/chimezie-prince.jpg",
   },
   {
     name: "Ejelue Mitchel Chiononso",
     position: "Vice President",
     bio: "Supports the president, coordinates directorates and drives internal strategy across PARC's programs.",
+    image: "/images/executives/ejelue-mitchel-chiononso.jpg",
   },
 ];
 
 export const ADMINISTRATION: Leader[] = [
-  { name: "Ezeilo Eucharia Chinecherem", position: "General Secretary", bio: "Custodian of PARC's records, minutes and institutional memory." },
-  { name: "Unigwe Batyah Ijeoma", position: "Assistant Secretary", bio: "Supports the secretariat and coordinates member communication." },
-  { name: "Anselm Chiwetalu Benjamin", position: "Financial Secretary", bio: "Oversees financial planning, records and reporting for PARC's activities." },
-  { name: "Emmanuel Confidence Nmesoma", position: "Treasurer", bio: "Stewards PARC's funds and ensures transparent, accountable finances." },
+  { name: "Ezeilo Eucharia Chinecherem", position: "General Secretary", bio: "Custodian of PARC's records, minutes and institutional memory.", image: "/images/executives/ezeilo-eucharia-chinecherem.jpg" },
+  { name: "Unigwe Batyah Ijeoma", position: "Assistant Secretary", bio: "Supports the secretariat and coordinates member communication.", image: "/images/executives/unigwe-batyah-ijeoma.jpg" },
+  { name: "Anselm Chiwetalu Benjamin", position: "Financial Secretary", bio: "Oversees financial planning, records and reporting for PARC's activities.", image: "/images/executives/anselm-chiwetalu-benjamin.jpg" },
+  { name: "Emmanuel Confidence Nmesoma", position: "Treasurer", bio: "Stewards PARC's funds and ensures transparent, accountable finances.", image: "/images/executives/emmanuel-confidence-nmesoma.jpg" },
 ];
 
 export const RESEARCH_COMMS: Leader[] = [
-  { name: "Mbama Mmesoma Jennifer", position: "Director of Research & Policy I", bio: "Leads PARC's policy research agenda and publication pipeline." },
-  { name: "Barnabas Ifechukwu Delight", position: "Director of Research & Policy II", bio: "Co-directs research, quality assurance and mentorship of contributors." },
-  { name: "Emmanuel Ononigbo Chijindu", position: "Chief Editor", bio: "Oversees editorial standards across all PARC publications." },
-  { name: "Okolichukwu Precious Munachi", position: "Assistant Chief Editor", bio: "Supports the editorial desk and prepares work for publication." },
-  { name: "Nkemjika Blessing Mbachukwuma", position: "Public Relations Officer", bio: "Shapes PARC's public voice, partnerships and outward engagement." },
+  { name: "Mbama Mmesoma Jennifer", position: "Director of Research & Policy I", bio: "Leads PARC's policy research agenda and publication pipeline.", image: "/images/executives/mbama-mmesoma-jennifer.jpg" },
+  { name: "Barnabas Ifechukwu Delight", position: "Director of Research & Policy II", bio: "Co-directs research, quality assurance and mentorship of contributors.", image: "/images/executives/barnabas-ifechukwu-delight.jpg" },
+  { name: "Emmanuel Ononigbo Chijindu", position: "Chief Editor", bio: "Oversees editorial standards across all PARC publications.", image: "/images/executives/emmanuel-ononigbo-chijindu.jpg" },
+  { name: "Okolichukwu Precious Munachi", position: "Assistant Chief Editor", bio: "Supports the editorial desk and prepares work for publication.", image: "/images/executives/okolichukwu-precious-munachi.jpg" },
+  { name: "Nkemjika Blessing Mbachukwuma", position: "Public Relations Officer", bio: "Shapes PARC's public voice, partnerships and outward engagement.", image: "/images/executives/nkemjika-blessing-mbachukwuma.jpg" },
 ];
 
 export const OPERATIONS: Leader[] = [
-  { name: "Linus Kassy Paul", position: "Director of Human Resources", bio: "Coordinates membership, welfare and internal culture." },
-  { name: "Okafor Amanda Chinecherem", position: "Director of Socials", bio: "Curates events, gatherings and PARC's community programs." },
-  { name: "Chude Sophia Chisom", position: "Technical Head", bio: "Leads PARC's digital, technical and production infrastructure." },
-  { name: "Okeke Chibuzor", position: "Assistant Technical Head", bio: "Supports technical operations, tooling and event production." },
+  { name: "Linus Kassy Paul", position: "Director of Human Resources", bio: "Coordinates membership, welfare and internal culture.", image: "/images/executives/linus-kassy-paul.jpg" },
+  { name: "Okafor Amanda Chinecherem", position: "Director of Socials", bio: "Curates events, gatherings and PARC's community programs.", image: "/images/executives/okafor-amanda-chinecherem.jpg" },
+  { name: "Chude Sophia Chisom", position: "Technical Head", bio: "Leads PARC's digital, technical and production infrastructure.", image: "/images/executives/chude-sophia-chisom.jpg" },
+  { name: "Okeke Chibuzor", position: "Assistant Technical Head", bio: "Supports technical operations, tooling and event production.", image: "/images/executives/okeke-chibuzor.jpg" },
 ];
 
 export const CORE_VALUES = [
