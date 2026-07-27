@@ -16,10 +16,21 @@ export function LeaderCard({ leader, featured = false }: { leader: Leader; featu
         }
         aria-hidden
       >
-        <User className="h-16 w-16 text-primary/40" />
-        <span className="absolute bottom-3 left-3 rounded-full bg-background/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
-          Photo placeholder
-        </span>
+        {leader.image ? (
+          <img
+            src={leader.image}
+            alt={leader.name}
+            loading="lazy"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+        ) : (
+          <>
+            <User className="h-16 w-16 text-primary/40" />
+            <span className="absolute bottom-3 left-3 rounded-full bg-background/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
+              Photo placeholder
+            </span>
+          </>
+        )}
       </div>
       <div className={"flex flex-col p-6 " + (featured ? "md:w-1/2 md:justify-center md:p-10" : "")}>
         <div className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
