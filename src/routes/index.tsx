@@ -269,6 +269,7 @@ function WhatWeDo() {
 function LeadershipPreview() {
   const founder = {
     name: "Dr. Chukwunonso Ekesiobi",
+    image: "/images/founder/dr-chukwunonso-ekesiobi.jpg",
     position: "Founder & Convener",
     bio: "Economist, policy analyst and lecturer in the Department of Economics at COOU, Igbariam. Founder and convener of PARC, providing vision and mentorship to the student Executive Council.",
   };
