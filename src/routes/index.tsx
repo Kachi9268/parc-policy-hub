@@ -426,9 +426,9 @@ function GalleryPreview() {
 
 function Testimonials() {
   const items = [
-    { quote: "PARC gave me the discipline of a researcher and the voice of a leader.", who: "Member testimonial (placeholder)" },
-    { quote: "The weekly sessions changed how I read, argue and think about policy.", who: "Member testimonial (placeholder)" },
-    { quote: "A rare space where ideas are treated with the seriousness they deserve.", who: "Faculty testimonial (placeholder)" },
+    { quote: "PARC gave me the discipline of a researcher and the voice of a leader.", who: "Member testimonial (Success Ikechukwu)" },
+    { quote: "The weekly sessions changed how I read, argue and think about policy.", who: "Member testimonial (Jude Henry)" },
+    { quote: "A rare space where ideas are treated with the seriousness they deserve.", who: "Member testimonial (Okpala Mathias)" },
   ];
   return (
     <section className="container-parc py-20 md:py-28">
