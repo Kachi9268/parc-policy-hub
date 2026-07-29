@@ -102,10 +102,14 @@ function AboutPage() {
         <div className="container-parc py-20 md:py-24">
           <SectionHeading eyebrow="Founder & Convener" title="Dr. Chukwunonso Ekesiobi." description="PARC combines the vision and mentorship of its founder with the energy and leadership of its student executives." />
           <div className="mt-10 grid gap-8 md:grid-cols-[280px_1fr] md:items-start md:gap-12">
-            <div className="mx-auto flex aspect-square w-full max-w-[280px] flex-col items-center justify-center rounded-2xl border border-border bg-gradient-to-br from-primary/10 to-[color:var(--gold)]/10">
-              <User className="h-16 w-16 text-primary/40" />
-              <span className="mt-3 text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">Portrait forthcoming</span>
-            </div>
+            <div className="mx-auto aspect-square w-full max-w-[280px] overflow-hidden rounded-2xl border border-border">
+  <img
+    src="/images/founder/dr-chukwunonso-ekesiobi.jpg"
+    alt="Dr. Chukwunonso Ekesiobi"
+    className="h-full w-full object-cover"
+    loading="lazy"
+  />
+</div>
             <div>
               <div className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Founder & Convener</div>
               <h3 className="mt-2 font-serif text-3xl text-foreground sm:text-4xl">Dr. Chukwunonso Ekesiobi</h3>
