@@ -113,12 +113,175 @@ function AboutPage() {
             <div>
               <div className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Founder & Convener</div>
               <h3 className="mt-2 font-serif text-3xl text-foreground sm:text-4xl">Dr. Chukwunonso Ekesiobi</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Economist, policy analyst and lecturer in the Department of Economics at Chukwuemeka Odumegwu Ojukwu University, Igbariam. Founder and convener of the Policy Analysis and Research Congress.
-              </p>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                <em>Full biography placeholder — an extended profile of Dr. Ekesiobi's academic work, research and public engagement will appear here.</em>
-              </p>
+              <div className="mt-6 space-y-5 text-sm leading-relaxed text-muted-foreground">
+  <p>
+    Dr. Chukwunonso Sylvester Ekesiobi is an economist, researcher and Senior
+    Lecturer in the Department of Economics at Chukwuemeka Odumegwu Ojukwu
+    University (COOU), Igbariam. His academic interests span Energy Economics,
+    Policy Economics, Environmental Economics, Social Research and
+    International Economic Relations. His{" "}
+    <a
+      href="https://coou.edu.ng/staff/view-staff?id=823"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-medium text-primary hover:underline"
+    >
+      official COOU staff profile
+    </a>{" "}
+    provides a detailed record of his academic career, research interests,
+    publications and university service.
+  </p>  <p>
+    Dr. Ekesiobi earned a First-Class Honours degree in Economics from Anambra
+    State University in 2008, now Chukwuemeka Odumegwu Ojukwu University.
+    According to his official university profile, he was the first student in
+    the Department of Economics at COOU to achieve a First-Class degree. He
+    subsequently obtained an MSc in Public Sector Economics from the University
+    of Nigeria, Nsukka, in 2013, followed by a PhD in Energy/Welfare Economics
+    from the same university in 2024. His doctoral research examined energy
+    efficiency, transition and quality of life in Nigeria.{" "}
+    <a
+      href="https://coou.edu.ng/staff/view-staff?id=823"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-medium text-primary hover:underline"
+    >
+      COOU Staff Profile
+    </a>
+  </p>  <p>
+    He joined the services of COOU in 2010 as a Graduate Assistant in the
+    Department of Economics and has since taken on extensive academic and
+    administrative responsibilities. His university profile records nine years
+    of service as Departmental Examination Officer and six years as Faculty
+    Examination Officer, alongside participation in faculty and university
+    committees concerned with examinations, academic standards, quality
+    assurance, strategic planning, research and institutional development.{" "}
+    <a
+      href="https://coou.edu.ng/staff/view-staff?id=823"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-medium text-primary hover:underline"
+    >
+      COOU Staff Profile
+    </a>
+  </p>  <p>
+    His academic work has produced research across areas including energy
+    efficiency, environmental sustainability, public finance, financial
+    development, economic growth and development. His published research
+    includes work on the relationship between international trade, foreign
+    direct investment and carbon emissions in Nigeria, as well as energy
+    efficiency investment and the implications of financial development and
+    debt. His{" "}
+    <a
+      href="https://coou.edu.ng/staff/view-staff?id=823"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-medium text-primary hover:underline"
+    >
+      COOU research profile
+    </a>{" "}
+    provides a comprehensive list of his journal articles, book chapters,
+    books, conference papers and other research outputs.
+  </p>  <p>
+    Dr. Ekesiobi has also participated in academic conferences and professional
+    research activities, including conferences of the Nigerian Economic Society
+    (NES) and the Nigeria Association for Energy Economics/International
+    Association for Energy Economics (NAEE/IAEE). His university profile
+    records presentations on issues including macroeconomic policy, economic
+    diversification, energy security, energy poverty and sustainable
+    development.{" "}
+    <a
+      href="https://coou.edu.ng/staff/view-staff?id=823"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-medium text-primary hover:underline"
+    >
+      COOU Staff Profile
+    </a>
+  </p>  <p>
+    His research and professional activities have received support through
+    research and travel grants from organisations including the Institute for
+    New Economic Thinking (INET), the Nigerian Tax Research Network (NTRN) and
+    the Federal Inland Revenue Service (FIRS), according to his official
+    university profile. The same profile records consultancy engagements
+    involving organisations including the International Centre for Tax and
+    Development, INET, NTRN and the Energy Commission of Nigeria.{" "}
+    <a
+      href="https://coou.edu.ng/staff/view-staff?id=823"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-medium text-primary hover:underline"
+    >
+      COOU Staff Profile
+    </a>
+  </p>  <p>
+    Beyond his academic work, Dr. Ekesiobi has held leadership and service roles
+    within the Nigerian Economic Society. His COOU profile records his service
+    as Secretary of the NES Anambra State Chapter and South-East Zone, as well
+    as his role as Special Assistant to the NES President on Student Matters
+    and pioneer National Student Liaison Officer. In October 2025, the Nigerian
+    Economic Society recognised his service with its Gold Medal Award at the
+    society's 66th annual conference.{" "}
+    <a
+      href="https://coou.edu.ng/news/view-news.php?slug=coou-celebrates-dr-chukwunonso-ekesiobi-on-the-reception-of-the-nigerian-economic-society-nes-gold-medal-award"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-medium text-primary hover:underline"
+    >
+      COOU announcement on the NES Gold Medal Award
+    </a>
+  </p>  <p>
+    His research standing has also received recent recognition. In COOU's
+    announcement of its Top 5 Ranking Global Research Scientists based on the
+    AD Scientific Index 2025–2026, Dr. Ekesiobi was ranked No. 2 among the
+    university's five highlighted scientists, in the field of Economics &
+    Econometrics. The university's announcement identifies this specifically as
+    a research-scientist ranking rather than a general ranking of lecturers.{" "}
+    <a
+      href="https://coou.edu.ng/news/view-news?slug=meet-coou-s-top-5-ranking-global-research-scientists"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-medium text-primary hover:underline"
+    >
+      COOU Top 5 Global Research Scientists
+    </a>
+  </p>  <p>
+    Dr. Ekesiobi's commitment to student development is also reflected in his
+    work outside conventional academic responsibilities. COOU identifies him as
+    a staff adviser to the Idemili Students Association and as the Convener of
+    the Policy Analysis and Research Congress (PARC), describing PARC as a
+    youth-oriented, policy-based think tank. Through PARC, he provides the
+    vision and mentorship for a student-led platform focused on research,
+    policy analysis, intellectual development and evidence-based engagement.{" "}
+    <a
+      href="https://coou.edu.ng/staff/view-staff?id=823"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-medium text-primary hover:underline"
+    >
+      COOU Staff Profile
+    </a>
+  </p>  <p>
+    His wider public engagement includes contributions as a guest writer for
+    Vanguard and appearances as a socioeconomic analyst on Anambra Broadcasting
+    Television and radio, as recorded in his university profile.{" "}
+    <a
+      href="https://coou.edu.ng/staff/view-staff?id=823"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-medium text-primary hover:underline"
+    >
+      COOU Staff Profile
+    </a>
+  </p>  <p>
+    Today, Dr. Ekesiobi combines teaching, research, institutional service and
+    mentorship. His work reflects a sustained interest in economics not merely
+    as an academic discipline, but as a means of understanding society,
+    evaluating policy and contributing to Nigeria's development. Through the
+    Policy Analysis and Research Congress, he continues to support the
+    development of students interested in research, critical thinking, policy
+    and leadership.
+  </p>
+</div>
               <blockquote className="mt-8 border-l-2 border-primary/40 pl-5 font-serif text-xl leading-snug text-foreground sm:text-2xl">
                 <span className="text-primary">"</span>Placeholder for the Founder's welcome message — a statement from Dr. Ekesiobi on the vision, purpose and future of PARC.<span className="text-primary">"</span>
                 <footer className="mt-4 text-xs uppercase tracking-widest text-muted-foreground">Dr. Chukwunonso Ekesiobi — Founder & Convener, PARC</footer>
