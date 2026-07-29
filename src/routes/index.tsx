@@ -397,6 +397,8 @@ function LatestArticles() {
 }
 
 function GalleryPreview() {
+  const sessionImg = "/images/homepage/parc-meeting.jpg";
+  const researchImg = "/images/homepage/parc-presentation.jpg";
   const tiles = [heroImg, sessionImg, researchImg, heroImg, sessionImg, researchImg];
   return (
     <section className="border-t border-border bg-[color:var(--surface)]">
