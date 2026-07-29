@@ -3,15 +3,28 @@ import { PageHeader } from "../components/page-header";
 import { ACHIEVEMENTS } from "../data/parc";
 import { Trophy } from "lucide-react";
 
-export const Route = createFileRoute("/achievements")({
-  head: () => ({
-    meta: [
-      { title: "Achievements — PARC" },
-      { name: "description", content: "A timeline of PARC's research, presentations, recognitions and community engagement." },
-      { property: "og:title", content: "Achievements — PARC" },
-      { property: "og:description", content: "Milestones from the Policy Analysis and Research Congress." },
-      { property: "og:url", content: "/achievements" },
-    ],
+export const ACHIEVEMENTS = [
+{
+year: "2026",
+title: "PARC Outreach Programme",
+body: "PARC held an outreach programme at Holy Stars Schools, Umudioka, Awkuzu, Oyi LGA, bringing PARCites and volunteers together to engage, encourage and invest in young students.",
+},
+{
+year: "2026",
+title: "Weekly Intellectual Sessions",
+body: "PARC continues to hold weekly intellectual sessions where members research, present and critically discuss economic, policy and social issues in an interactive academic environment.",
+},
+{
+year: "2025",
+title: "Participation in the 18th NAEE/IAEE Annual International Conference",
+body: "PARC delegates participated in the 18th Nigerian Association for Energy Economics / International Association for Energy Economics Annual International Conference in Abuja, where PARC representatives were scheduled to contribute presentations to discussions on energy policy and developing economies.",
+},
+{
+year: "2020",
+title: "Contribution to Research on Entrepreneurship in Anambra State",
+body: "Members of PARC–COOU assisted with the survey exercise for research examining the Igbo entrepreneurship model and entrepreneurial development in Anambra State.",
+},
+];
     links: [{ rel: "canonical", href: "/achievements" }],
   }),
   component: AchievementsPage,
@@ -40,13 +53,33 @@ function AchievementsPage() {
         </ol>
 
         <div className="mt-16 grid gap-4 md:grid-cols-3">
-          {["Partnerships", "Community Outreach", "Major Events"].map((t) => (
-            <div key={t} className="rounded-2xl border border-dashed border-border bg-[color:var(--surface)] p-6">
-              <div className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">{t}</div>
-              <p className="mt-2 text-sm text-muted-foreground">Placeholder — content forthcoming.</p>
-            </div>
-          ))}
-        </div>
+  {[
+    {
+      title: "Research",
+      body: "PARC members have contributed to research activities, including fieldwork supporting research on entrepreneurship and economic development in Anambra State.",
+    },
+    {
+      title: "Community Outreach",
+      body: "PARC extended its work beyond the university through its 2026 outreach programme at Holy Stars Schools, Umudioka, Awkuzu.",
+    },
+    {
+      title: "Intellectual Sessions",
+      body: "PARC's weekly sessions provide a platform for members to research, present, question and debate important economic, policy and social issues.",
+    },
+  ].map((item) => (
+    <div
+      key={item.title}
+      className="rounded-2xl border border-border bg-[color:var(--surface)] p-6"
+    >
+      <div className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">
+        {item.title}
+      </div>
+      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+        {item.body}
+      </p>
+    </div>
+  ))}
+</div>
       </section>
     </>
   );
