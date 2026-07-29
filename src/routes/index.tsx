@@ -1,8 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Quote, Sparkles, Trophy, FileText, ImageIcon, Calendar } from "lucide-react";
 import heroImg from "../assets/hero-library.jpg";
-import sessionImg from "../assets/session.jpg";
-import researchImg from "../assets/research.jpg";
 import { SectionHeading } from "../components/section-heading";
 import { ParcMark } from "../components/parc-mark";
 import { ACTIVITIES, ACHIEVEMENTS, BLOG_POSTS, EXECUTIVE_LEADERSHIP } from "../data/parc";
@@ -197,10 +195,10 @@ function AboutPreview() {
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div className="aspect-[3/4] overflow-hidden rounded-2xl border border-border">
-            <img src={sessionImg} alt="PARC members in an intellectual session" className="h-full w-full object-cover" width={1024} height={1024} loading="lazy" />
+            <img src="/images/homepage/parc-meeting.jpg" alt="PARC members seated during a session" className="h-full w-full object-cover" width={1024} height={1024} loading="lazy" />
           </div>
           <div className="mt-8 aspect-[3/4] overflow-hidden rounded-2xl border border-border">
-            <img src={researchImg} alt="A member writing research notes" className="h-full w-full object-cover" width={1024} height={1024} loading="lazy" />
+            <img src="/images/homepage/parc-presentation.jpg" alt="A PARC member giving a presentation" className="h-full w-full object-cover" width={1024} height={1024} loading="lazy" />
           </div>
         </div>
       </div>
