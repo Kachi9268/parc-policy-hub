@@ -19,14 +19,14 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/70">
-      <div className="container-parc flex h-16 items-center justify-between gap-6 md:h-20">
+      <div className="container-parc flex h-20 items-center justify-between gap-6 md:h-24">
         <Link
           to="/"
           className="flex min-w-0 items-center gap-3"
           onClick={() => setOpen(false)}
           aria-label="PARC — Policy Analysis and Research Congress home"
         >
-          <ParcMark className="h-9 w-9 shrink-0" />
+          <ParcMark className="h-12 w-12 shrink-0 md:h-14 md:w-14" />
           <span className="flex min-w-0 flex-col leading-tight">
             <span className="truncate text-sm font-bold tracking-tight text-primary">
               PARC
