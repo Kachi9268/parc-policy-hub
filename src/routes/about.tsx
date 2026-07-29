@@ -31,7 +31,7 @@ function AboutPage() {
           <div>
             <SectionHeading eyebrow="Our History" title="Founded on a simple conviction." />
             <div className="mt-6 space-y-5 text-base leading-relaxed text-muted-foreground">
-              <p>The Policy Analysis and Research Congress was founded at COOU Igbariam by <strong className="font-semibold text-foreground">Dr. Chukwunonso Ekesiobi</strong> — an economist, policy analyst and lecturer in the Department of Economics — who believed the university should be more than a place to earn a degree; it should be a place to form minds.</p>
+              <p>The Policy Analysis and Research Congress was founded in 2017 at COOU Igbariam by <strong className="font-semibold text-foreground">Dr. Chukwunonso Ekesiobi</strong> — an economist, policy analyst and lecturer in the Department of Economics — who believed the university should be more than a place to earn a degree; it should be a place to form minds.</p>
               <p>From weekly meetings in modest rooms to a growing body of research, presentations and public engagement, PARC has become a standing forum for rigorous thinking on the campus.</p>
               <p>Today, PARC is a student-led congress: day-to-day activities and administration are carried by an elected student Executive Council, working under the guidance and mentorship of the Founder and Convener.</p>
             </div>
