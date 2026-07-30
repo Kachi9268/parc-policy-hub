@@ -1,18 +1,15 @@
 import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "../components/page-header";
-import heroImg from "../assets/hero-library.jpg";
-import sessionImg from "../assets/session.jpg";
-import researchImg from "../assets/research.jpg";
 import { X } from "lucide-react";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
       { title: "Gallery — PARC" },
-      { name: "description", content: "Photos from PARC sessions, presentations and events at COOU Igbariam." },
+      { name: "description", content: "Photo albums from PARC sessions, presentations and events at COOU Igbariam." },
       { property: "og:title", content: "Gallery — PARC" },
-      { property: "og:description", content: "Moments from PARC." },
+      { property: "og:description", content: "Photo albums from PARC." },
       { property: "og:url", content: "/gallery" },
     ],
     links: [{ rel: "canonical", href: "/gallery" }],
@@ -20,23 +17,36 @@ export const Route = createFileRoute("/gallery")({
   component: GalleryPage,
 });
 
-const IMAGES = [
-  { src: sessionImg, event: "Weekly Sessions", alt: "PARC members in a weekly intellectual session" },
-  { src: researchImg, event: "Research", alt: "A member writing research notes" },
-  { src: heroImg, event: "Symposia", alt: "PARC research symposium — placeholder" },
-  { src: sessionImg, event: "Weekly Sessions", alt: "Discussion at a weekly session" },
-  { src: researchImg, event: "Research", alt: "Research work in progress" },
-  { src: heroImg, event: "Symposia", alt: "Symposium moment" },
-  { src: sessionImg, event: "Outreach", alt: "Community outreach — placeholder" },
-  { src: researchImg, event: "Research", alt: "Study and writing" },
-  { src: heroImg, event: "Outreach", alt: "Outreach event — placeholder" },
+const ALBUMS = [
+  {
+    title: "Weekly Intellectual Sessions",
+    description: "Weekly academic sessions where members present papers, discuss policy issues, ask questions and strengthen critical thinking.",
+  },
+  {
+    title: "Research Presentations",
+    description: "Original research presentations delivered by members covering economics, public policy and contemporary national and international issues.",
+  },
+  {
+    title: "Community Outreach",
+    description: "PARC's outreach activities promoting education, mentorship and community engagement, including the Holy Stars Schools outreach programme.",
+  },
+  {
+    title: "Leadership & Executive Activities",
+    description: "Executive meetings, leadership planning sessions, founder engagements and official executive activities.",
+  },
+  {
+    title: "Community & Member Life",
+    description: "Group photographs, behind-the-scenes moments and activities that reflect the culture and community of PARC.",
+  },
 ];
+
+const IMAGES: { src: string; event: string; alt: string }[] = [];
 
 function GalleryPage() {
   const [filter, setFilter] = useState<string>("All");
   const [preview, setPreview] = useState<string | null>(null);
 
-  const filters = useMemo(() => ["All", ...Array.from(new Set(IMAGES.map((i) => i.event)))], []);
+  const filters = useMemo(() => ["All", ...ALBUMS.map((a) => a.title)], []);
   const list = filter === "All" ? IMAGES : IMAGES.filter((i) => i.event === filter);
 
   return (
