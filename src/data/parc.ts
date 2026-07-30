@@ -139,12 +139,16 @@ export const CORE_VALUES = [
 ];
 
 export const ACHIEVEMENTS = [
-  { year: "2025", title: "PARC Annual Research Symposium", body: "Members presented original policy briefs to an audience of faculty, alumni and guests." },
-  { year: "2025", title: "Outstanding Presenter Recognitions", body: "Multiple members recognised for excellence in weekly research presentations." },
-  { year: "2024", title: "Community Policy Outreach", body: "Field engagement translating academic research into community-level insight." },
-  { year: "2024", title: "Weekly Intellectual Sessions Milestone", body: "Sustained weekly convenings creating a consistent culture of rigorous debate." },
-  { year: "2024", title: "Academic Distinctions", body: "PARC members recognised for excellence in coursework and scholarship." },
-  { year: "2023", title: "Founding of PARC", body: "The Policy Analysis and Research Congress was established at COOU Igbariam." },
+  {
+    year: "2026",
+    title: "PARC Outreach Programme",
+    body: "PARC organised a community outreach programme at Holy Stars Schools, Umudioka, Awkuzu, Oyi Local Government Area, where members engaged secondary school students through mentorship, education and leadership-focused activities.",
+  },
+  {
+    year: "2026",
+    title: "Weekly Intellectual Sessions",
+    body: "PARC continues to organise weekly intellectual sessions where members present research, debate contemporary policy and economic issues, strengthen critical thinking and develop public speaking skills.",
+  },
 ];
 
 export const BLOG_POSTS = [
