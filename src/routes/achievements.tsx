@@ -1,19 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "../components/page-header";
 import { Trophy } from "lucide-react";
-
-const ACHIEVEMENTS = [
-  {
-    year: "2026",
-    title: "PARC Outreach Programme",
-    body: "PARC organised a community outreach programme at Holy Stars Schools, Umudioka, Awkuzu, Oyi Local Government Area, where members engaged secondary school students through mentorship, education and leadership-focused activities.",
-  },
-  {
-    year: "2026",
-    title: "Weekly Intellectual Sessions",
-    body: "PARC continues to organise weekly intellectual sessions where members present research, debate contemporary policy and economic issues, strengthen critical thinking and develop public speaking skills.",
-  },
-];
+import { ACHIEVEMENTS } from "../data/parc";
 
 export const Route = createFileRoute("/achievements")({
   head: () => ({
