@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Quote, Sparkles, Trophy, FileText, ImageIcon, Calendar } from "lucide-react";
-import heroImg from "../assets/hero-library.jpg";
 import { SectionHeading } from "../components/section-heading";
 import { ParcMark } from "../components/parc-mark";
 import { ACTIVITIES, ACHIEVEMENTS, BLOG_POSTS, EXECUTIVE_LEADERSHIP } from "../data/parc";
@@ -215,11 +214,11 @@ function VisionMission() {
           {[
             {
               label: "Vision",
-              body: "To be a foremost student-led policy institute in Africa — cultivating thinkers whose research, judgement and leadership shape the public conversation.",
+              body: "To be a leading student-led policy and research think tank that develops intellectually sound, morally responsible and academically excellent leaders through research, policy discourse and evidence-based engagement.",
             },
             {
               label: "Mission",
-              body: "To equip members with the analytical, communicative and moral tools to produce rigorous policy work and lead with clarity in academic, civic and professional life.",
+              body: "To cultivate critical thinkers by promoting research, policy analysis, academic excellence, skill acquisition, moral and social development, while fostering collaboration with academic and research institutions in pursuit of national and societal development.",
             },
           ].map((c) => (
             <div
@@ -398,13 +397,9 @@ function LatestArticles() {
 }
 
 function GalleryPreview() {
-  const sessionImg = "/images/homepage/parc-meeting.jpg";
-  const researchImg = "/images/homepage/parc-presentation.jpg";
-  const fallback = [heroImg, sessionImg, researchImg, heroImg, sessionImg, researchImg].map((src) => ({
-    src,
-    alt: "PARC event photograph",
-  }));
-  const tiles = GALLERY_IMAGES.length > 0 ? GALLERY_IMAGES.slice(0, 6) : fallback;
+  const tiles = [0, 1, 4, 5, 8, 9]
+    .map((i) => GALLERY_IMAGES[i])
+    .filter(Boolean);
   return (
     <section className="border-t border-border bg-[color:var(--surface)]">
       <div className="container-parc py-20 md:py-28">
