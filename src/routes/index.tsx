@@ -398,13 +398,9 @@ function LatestArticles() {
 }
 
 function GalleryPreview() {
-  const sessionImg = "/images/homepage/parc-meeting.jpg";
-  const researchImg = "/images/homepage/parc-presentation.jpg";
-  const fallback = [heroImg, sessionImg, researchImg, heroImg, sessionImg, researchImg].map((src) => ({
-    src,
-    alt: "PARC event photograph",
-  }));
-  const tiles = GALLERY_IMAGES.length > 0 ? GALLERY_IMAGES.slice(0, 6) : fallback;
+  const tiles = [0, 1, 4, 5, 8, 9]
+    .map((i) => GALLERY_IMAGES[i])
+    .filter(Boolean);
   return (
     <section className="border-t border-border bg-[color:var(--surface)]">
       <div className="container-parc py-20 md:py-28">
