@@ -77,7 +77,7 @@ function Hero() {
       <div className="container-parc grid gap-12 py-16 md:py-24 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:gap-16">
         <div>
           <div className="mb-6 flex items-center gap-3">
-            <ParcMark className="h-14 w-14" />
+            <ParcMark className="h-14 w-20" />
             <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-primary">
               COOU · Igbariam Campus
             </div>
