@@ -399,7 +399,11 @@ function LatestArticles() {
 function GalleryPreview() {
   const sessionImg = "/images/homepage/parc-meeting.jpg";
   const researchImg = "/images/homepage/parc-presentation.jpg";
-  const tiles = [heroImg, sessionImg, researchImg, heroImg, sessionImg, researchImg];
+  const fallback = [heroImg, sessionImg, researchImg, heroImg, sessionImg, researchImg].map((src) => ({
+    src,
+    alt: "PARC event photograph",
+  }));
+  const tiles = GALLERY_IMAGES.length > 0 ? GALLERY_IMAGES.slice(0, 6) : fallback;
   return (
     <section className="border-t border-border bg-[color:var(--surface)]">
       <div className="container-parc py-20 md:py-28">
@@ -415,7 +419,7 @@ function GalleryPreview() {
         <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
           {tiles.map((t, i) => (
             <div key={i} className="group relative aspect-square overflow-hidden rounded-xl border border-border">
-              <img src={t} alt="PARC event placeholder" className="h-full w-full object-cover transition group-hover:scale-105" width={512} height={512} loading="lazy" />
+              <img src={t.src} alt={t.alt} className="h-full w-full object-cover transition group-hover:scale-105" width={512} height={512} loading="lazy" />
             </div>
           ))}
         </div>
