@@ -84,8 +84,8 @@ function Hero() {
           </div>
           <h1 className="font-serif text-4xl leading-[1.02] text-foreground sm:text-5xl md:text-6xl lg:text-[4.25rem]">
   A student-led{" "}
-  <span className="text-primary">policy institute</span>{" "}
-  and{" "}
+  <span className="text-primary">policy</span>{" "}
+        {" "}
   <span className="text-primary">think tank</span>{" "}
   advancing progress through knowledge.
 </h1>
