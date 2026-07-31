@@ -4,6 +4,7 @@ import heroImg from "../assets/hero-library.jpg";
 import { SectionHeading } from "../components/section-heading";
 import { ParcMark } from "../components/parc-mark";
 import { ACTIVITIES, ACHIEVEMENTS, BLOG_POSTS, EXECUTIVE_LEADERSHIP } from "../data/parc";
+import { GALLERY_IMAGES } from "../data/gallery";
 import { LeaderCard } from "../components/leader-card";
 
 
