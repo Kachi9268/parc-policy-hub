@@ -50,7 +50,7 @@ const album = (
   }));
 
 export const GALLERY_IMAGES: GalleryImage[] = [
-  ...album("Weekly Intellectual Sessions", "weekly-session", 0, "PARC weekly intellectual session"),
-  ...album("Research Presentations", "research-presentation", 0, "PARC research presentation"),
-  ...album("Community Outreach", "community-outreach", 0, "PARC community outreach"),
+  ...album("Weekly Intellectual Sessions", "weekly-session", 4, "PARC weekly intellectual session"),
+  ...album("Research Presentations", "research-presentation", 4, "PARC research presentation"),
+  ...album("Community Outreach", "community-outreach", 4, "PARC community outreach"),
 ];
