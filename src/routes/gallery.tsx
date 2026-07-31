@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader } from "../components/page-header";
 import { X } from "lucide-react";
+import { GALLERY_ALBUMS, GALLERY_IMAGES } from "../data/gallery";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -17,30 +18,8 @@ export const Route = createFileRoute("/gallery")({
   component: GalleryPage,
 });
 
-const ALBUMS = [
-  {
-    title: "Weekly Intellectual Sessions",
-    description: "Weekly academic sessions where members present papers, discuss policy issues, ask questions and strengthen critical thinking.",
-  },
-  {
-    title: "Research Presentations",
-    description: "Original research presentations delivered by members covering economics, public policy and contemporary national and international issues.",
-  },
-  {
-    title: "Community Outreach",
-    description: "PARC's outreach activities promoting education, mentorship and community engagement, including the Holy Stars Schools outreach programme.",
-  },
-  {
-    title: "Leadership & Executive Activities",
-    description: "Executive meetings, leadership planning sessions, founder engagements and official executive activities.",
-  },
-  {
-    title: "Community & Member Life",
-    description: "Group photographs, behind-the-scenes moments and activities that reflect the culture and community of PARC.",
-  },
-];
-
-const IMAGES: { src: string; event: string; alt: string }[] = [];
+const ALBUMS = GALLERY_ALBUMS;
+const IMAGES = GALLERY_IMAGES;
 
 function GalleryPage() {
   const [filter, setFilter] = useState<string>("All");
