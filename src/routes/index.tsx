@@ -86,7 +86,7 @@ function Hero() {
   <span className="text-primary">policy institute</span>{" "}
   and{" "}
   <span className="text-primary">think tank</span>{" "}
-  for a thinking generation.
+  advancing progress through knowledge.
 </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             The Policy Analysis and Research Congress advances rigorous research,

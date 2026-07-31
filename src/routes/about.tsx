@@ -74,8 +74,8 @@ function AboutPage() {
         <div className="container-parc py-20 md:py-24">
           <div className="grid gap-6 md:grid-cols-2">
             {[
-              { label: "Vision", body: "To be a foremost student-led policy institute in Africa — cultivating thinkers whose research, judgement and leadership shape the public conversation." },
-              { label: "Mission", body: "To equip members with the analytical, communicative and moral tools to produce rigorous policy work and lead with clarity in academic, civic and professional life." },
+              { label: "Vision", body: "To be a leading student-led policy and research think tank that develops intellectually sound, morally responsible and academically excellent leaders through research, policy discourse and evidence-based engagement." },
+              { label: "Mission", body: "To cultivate critical thinkers by promoting research, policy analysis, academic excellence, skill acquisition, moral and social development, while fostering collaboration with academic and research institutions in pursuit of national and societal development." },
             ].map((c) => (
               <div key={c.label} className="rounded-2xl border border-border bg-card p-8 md:p-10">
                 <div className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">{c.label}</div>
