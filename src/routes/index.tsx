@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Quote, Sparkles, Trophy, FileText, ImageIcon, Calendar } from "lucide-react";
-import heroImg from "../assets/hero-library.jpg";
 import { SectionHeading } from "../components/section-heading";
 import { ParcMark } from "../components/parc-mark";
 import { ACTIVITIES, ACHIEVEMENTS, BLOG_POSTS, EXECUTIVE_LEADERSHIP } from "../data/parc";
