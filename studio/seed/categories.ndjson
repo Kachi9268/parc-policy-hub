@@ -1,0 +1,10 @@
+{"_id": "category-policy-analysis", "_type": "category", "title": "Policy Analysis", "slug": {"_type": "slug", "current": "policy-analysis"}}
+{"_id": "category-economic-insights", "_type": "category", "title": "Economic Insights", "slug": {"_type": "slug", "current": "economic-insights"}}
+{"_id": "category-research-highlights", "_type": "category", "title": "Research Highlights", "slug": {"_type": "slug", "current": "research-highlights"}}
+{"_id": "category-weekly-meeting-recaps", "_type": "category", "title": "Weekly Meeting Recaps", "slug": {"_type": "slug", "current": "weekly-meeting-recaps"}}
+{"_id": "category-member-spotlight", "_type": "category", "title": "Member Spotlight", "slug": {"_type": "slug", "current": "member-spotlight"}}
+{"_id": "category-achievements", "_type": "category", "title": "Achievements", "slug": {"_type": "slug", "current": "achievements"}}
+{"_id": "category-events", "_type": "category", "title": "Events", "slug": {"_type": "slug", "current": "events"}}
+{"_id": "category-leadership-messages", "_type": "category", "title": "Leadership Messages", "slug": {"_type": "slug", "current": "leadership-messages"}}
+{"_id": "category-opinion-commentary", "_type": "category", "title": "Opinion & Commentary", "slug": {"_type": "slug", "current": "opinion-commentary"}}
+{"_id": "category-announcements", "_type": "category", "title": "Announcements", "slug": {"_type": "slug", "current": "announcements"}}
