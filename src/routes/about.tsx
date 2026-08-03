@@ -282,10 +282,7 @@ function AboutPage() {
     and leadership.
   </p>
 </div>
-              <blockquote className="mt-8 border-l-2 border-primary/40 pl-5 font-serif text-xl leading-snug text-foreground sm:text-2xl">
-                <span className="text-primary">"</span>Placeholder for the Founder's welcome message — a statement from Dr. Ekesiobi on the vision, purpose and future of PARC.<span className="text-primary">"</span>
-                <footer className="mt-4 text-xs uppercase tracking-widest text-muted-foreground">Dr. Chukwunonso Ekesiobi — Founder & Convener, PARC</footer>
-              </blockquote>
+              
             </div>
           </div>
         </div>
