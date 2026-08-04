@@ -1,6 +1,11 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Phone, Twitter, Instagram, Linkedin, Facebook } from "lucide-react";
+import { Mail, MapPin, Linkedin, Facebook } from "lucide-react";
 import { ParcMark } from "./parc-mark";
+
+const SOCIALS = [
+  { Icon: Linkedin, label: "PARC on LinkedIn", href: "https://www.linkedin.com/company/policy-analysis-and-research-congress-parc/" },
+  { Icon: Facebook, label: "PARC on Facebook", href: "https://www.facebook.com/share/1E1Vabxps7/" },
+];
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -55,11 +60,13 @@ export function SiteFooter() {
             <li><Link to="/contact" className="text-white/70 hover:text-[color:var(--gold)]">Contact</Link></li>
           </ul>
           <div className="mt-6 flex gap-3">
-            {[Twitter, Linkedin, Instagram, Facebook].map((Icon, i) => (
+            {SOCIALS.map(({ Icon, label, href }) => (
               <a
-                key={i}
-                href="#"
-                aria-label="Social link (placeholder)"
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-white/80 transition hover:border-[color:var(--gold)] hover:text-[color:var(--gold)]"
               >
                 <Icon className="h-4 w-4" />
@@ -79,11 +86,9 @@ export function SiteFooter() {
             </li>
             <li className="flex items-start gap-3">
               <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[color:var(--gold)]" />
-              <span>contact@parc-coou.org <span className="text-white/40">(placeholder)</span></span>
-            </li>
-            <li className="flex items-start gap-3">
-              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[color:var(--gold)]" />
-              <span>+234 000 000 0000 <span className="text-white/40">(placeholder)</span></span>
+              <a href="mailto:parc@coou.edu.ng" className="hover:text-[color:var(--gold)]">
+                parc@coou.edu.ng
+              </a>
             </li>
           </ul>
         </div>
